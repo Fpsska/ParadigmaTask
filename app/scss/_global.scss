@@ -1,0 +1,121 @@
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+li,
+a,
+p {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    font-size: inherit;
+}
+
+button {
+    text-decoration: none;
+    outline: none;
+    border: none;
+    font-size: inherit;
+}
+
+body {
+    font-size: vw(16);
+    background-color: rgba(49, 49, 49, 0.226);
+}
+
+// /.NULLSTYLES
+
+$primary: #282728;
+$secondary: #ffffff;
+
+.container {
+    max-width: vw(1550);
+    margin: 0 auto;
+    height: 100%;
+}
+
+.btn {
+    cursor: pointer;
+    color: #fff;
+    font-size: vw(16);
+}
+
+.btn--nav {
+    padding: vw(25) vw(35);
+    border-radius: 0.3vmax;
+    background-color: #313d4b;
+    font-size: vw(16);
+    @extend %u-regular;
+}
+
+.btn--calc {
+    text-transform: uppercase;
+    padding: vw(25) 0 vw(25) vw(15);
+    background-color: #fe6f51;
+    border-radius: px(5);
+    text-align: start;
+    width: 16vmax;
+    position: relative;
+    overflow: hidden;
+    @extend %u-bold;
+}
+
+.icon:active:after {
+    opacity: 0;
+}
+
+.btn--switch {
+    background-color: transparent;
+    color: $primary;
+    padding: 0;
+    transition: 0.3s linear;
+    &:hover {
+        color: #fe6f51;
+    }
+}
+
+svg {
+    width: vw(50);
+    height: vw(25);
+}
+
+.menu-icon {
+    display: none;
+    width: vw(150);
+    height: vw(35);
+    z-index: 10;
+}
+.menu-icon div {
+    width: vw(30);
+    height: vw(5);
+    background: #282728;
+    margin: vw(5);
+    transition: all 0.35s;
+    border-radius: vw(2);
+}
+
+.nav_mobile {
+    display: none;
+}
