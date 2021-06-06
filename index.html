@@ -3,10 +3,10 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
-  <link rel="icon" type="image/png" sizes="32x32" href="./img/Favicon.png">
+  <link rel="shortcut icon" href="./img/Favicon.png" type="image/x-icon">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -142,13 +142,6 @@
   <!-- /. svg sprites -->
 
   <header class="header">
-
-    <div class="worker">
-      <p class="worker__name"><b>Виталий</b></p>
-      <p class="worker__profession">Монтажник</p>
-      <p class="worker__experience">Опыт работы с дымоходами 9 лет</p>
-    </div>
-
     <div class="container">
       <nav class="nav">
         <div class="nav__section_1">
@@ -164,7 +157,7 @@
             <div class="location__description">
               <p class="location__text_1"><b>Украина, Киев,</b></p>
               <p class="location__text_2">Васильковская 30</p>
-              <a class="location__link" id="map__link" href="">Посмотреть на карте</a>
+              <a class="location__link" id="mapBtn" href="#">Посмотреть на карте</a>
             </div>
           </div>
 
@@ -216,7 +209,6 @@
               </li>
             </ul>
           </div>
-
         </div>
 
         <div class="nav__section_2">
@@ -250,150 +242,120 @@
             </li>
           </ul>
         </div>
+
+        <ul class="nav__menu-mobile">
+          <li class="nav__slider-item">
+            <a class="nav__menu-link" href="">Контакты</a>
+          </li>
+          <li class="nav__slider-item">
+            <a class="nav__menu-link" href="">Услуги</a>
+          </li>
+          <li class="nav__slider-item">
+            <a class="nav__menu-link" href="">Наши новости</a>
+          </li>
+          <li class="nav__slider-item">
+            <a class="nav__menu-link" href="">Отзывы</a>
+          </li>
+          <li class="nav__slider-item">
+            <a class="nav__menu-link" href="">Консультация</a>
+          </li>
+          <li class="nav__slider-item">
+            <a class="nav__menu-link" href="">Приемущества</a>
+          </li>
+          <li class="nav__slider-item">
+            <a class="nav__menu-link" href="">Вопрос-ответ</a>
+          </li>
+          <li class="nav__slider-item">
+            <a class="nav__menu-link" href="">Контакты</a>
+          </li>
+        </ul>
       </nav>
 
-      <div class="nav_mobile">
-
-        <div class="nav_mobile-top">
-          <div class="logo">
-            <img class="logo__img" src="./img/LOGO.png" alt="logo">
-          </div>
-          <div class="switch">
-            <h3 class="switch__title">Выбор языка</h3>
-
-            <div class="switch__buttons">
-              <button class="btn btn--switch btn-ru">RU</button>
-              <button class="btn btn--switch btn-ua">UA</button>
-            </div>
-          </div>
-
-          <div class="menu-icon">
-            <div class="line_one"></div>
-            <div class="line_two"></div>
-            <div class="line_three"></div>
-          </div>
-        </div>
-
-        <div class="nav_mobile-btm">
-          <div class="nav__button">
-            <button class="btn btn--nav">Консультация инженера</button>
-          </div>
-
-          <div class="social">
-
-            <div class="social__top">
-              <svg class="social__icon">
-                <use xlink:href="#phone"></use>
-              </svg>
-              <a class="social__number" href="tel:+38 067 242-58-78">+38 067 242-58-78</a>
-            </div>
-
-
-            <ul class="social__menu">
-              <li class="social__menu-item viber">
-                <a class="social__menu-link" href="#" target="_blank">
-                  <svg>
-                    <use xlink:href="#viber"></use>
-                  </svg>
-                </a>
-              </li>
-
-              <li class="social__menu-item telegram">
-                <a class="social__menu-link" href="#" target="_blank">
-                  <svg>
-                    <use xlink:href="#telegram"></use>
-                  </svg>
-                </a>
-              </li>
-
-              <li class="social__menu-item whatsapp">
-                <a class="social__menu-link" href="#" target="_blank">
-                  <svg>
-                    <use xlink:href="#whatsapp"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-
+      <div class="worker">
+        <p class="worker__name"><b>Виталий</b></p>
+        <p class="worker__profession">Монтажник</p>
+        <p class="worker__experience">Опыт работы с дымоходами 9 лет</p>
       </div>
 
-      <!-- /. nav -->
-      <article class="features">
-        <h1 class="features__title"><b>Монтаж дымоходов из нержавеющей стали</b> для частных домов и предприятий</h1>
-        <div class="features__wrapper">
 
-          <div class="features__item features__item_1">
-            <p class="features__text-number">15</p>
-            <p class="features__text"><b>лет устанавливаем дымоходы</b> для частных лиц и организаций</p>
-            <svg class="features__decoration">
-              <use xlink:href="#redline"></use>
-            </svg>
-          </div>
-
-          <div class="features__item features__item_2">
-            <p class="features__text"><b>Бесплатный выезд инженера</b> в пределах 30 км. от Киева</p>
-            <svg class="features__decoration">
-              <use xlink:href="#redline"></use>
-            </svg>
-          </div>
-
-          <div class="features__item features__item_3">
-            <p class="features__text"><b>Монтаж под ключ от 1 дня,</b> в наличии все разрешительные документы</p>
-            <svg class="features__decoration">
-              <use xlink:href="#redline"></use>
-            </svg>
-          </div>
-
-        </div>
-
-      </article>
-      <!-- /. features -->
-      <div class="header__bottom">
-
-        <div class="computation">
-          <p class="computation__text">Рассчитайте стоимость монтажа вашего дымохода за 1 минуту и <span
-              class="computation__decoration">получите скидку
-              15%</span></p>
-          <div class="computation__button">
-            <svg class="calculator">
-              <use xlink:href="#calculator"></use>
-            </svg>
-            <button class="btn btn--calc">Рассчитать стоимость монтажа и получить скидку</button>
-          </div>
-        </div>
-
-
-        <div class="slider">
-          <div class="slider__wrapper">
-            <h2 class="slider__title">
-              Лицензии и сертификаты в наличии
-            </h2>
-            <div class="slider__gallary">
-              <a class="slider__img-box" title="Document №1" href="./img/document.jpg">
-                <img class="slider__img" src="./img/document.jpg">
-              </a>
-              <a class="slider__img-box" title="Document №1" href="./img/document.jpg">
-                <img class="slider__img" src="./img/document.jpg">
-              </a>
-              <a class="slider__img-box" title="Document №1" href="./img/document.jpg">
-                <img class="slider__img" src="./img/document.jpg">
-              </a>
-            </div>
-          </div>
-
-        </div>
-      </div>
-      <!-- /.header__bottom -->
-
-    </div>
   </header>
   <!-- /. header -->
-
   <main>
-    <!--  -->
+    <section class="section">
+      <div class="container">
+        <div class="container-main">
+
+          <article class="features">
+            <h1 class="features__title"><b>Монтаж дымоходов из нержавеющей стали</b> для частных домов и предприятий
+            </h1>
+            <div class="features__wrapper">
+
+              <div class="features__item features__item_1">
+                <p class="features__text-number">15</p>
+                <p class="features__text"><b>лет устанавливаем дымоходы</b> для частных лиц и организаций</p>
+                <svg class="features__decoration">
+                  <use xlink:href="#redline"></use>
+                </svg>
+              </div>
+
+              <div class="features__item features__item_2">
+                <p class="features__text"><b>Бесплатный выезд инженера</b> в пределах 30 км. от Киева</p>
+                <svg class="features__decoration">
+                  <use xlink:href="#redline"></use>
+                </svg>
+              </div>
+
+              <div class="features__item features__item_3">
+                <p class="features__text"><b>Монтаж под ключ от 1 дня,</b> в наличии все разрешительные документы</p>
+                <svg class="features__decoration">
+                  <use xlink:href="#redline"></use>
+                </svg>
+              </div>
+
+            </div>
+          </article>
+          <!-- /. features -->
+          <div class="computation">
+            <div class="container-computation">
+              <div class="computation__wrapper">
+                <p class="computation__text">Рассчитайте стоимость монтажа вашего дымохода за 1 минуту и <span
+                    class="computation__decoration">получите скидку
+                    15%</span></p>
+                <div class="computation__button">
+                  <img class="calculator" src="./img/calculator.svg" alt="calculator">
+                  <button class="btn btn--calc">Рассчитать стоимость монтажа и получить скидку</button>
+                </div>
+              </div>
+
+              <div class="slider">
+                <h2 class="slider__title">
+                  Лицензии и сертификаты в наличии
+                </h2>
+                <div class="slider__gallary">
+                  <a class="slider__img" href="./img/document.jpg">
+                    <img src="./img/document.jpg" alt="document">
+                  </a>
+                  <a class="slider__img" href="./img/document.jpg">
+                    <img src="./img/document.jpg" alt="document">
+                  </a>
+                  <a class="slider__img" href="./img/document.jpg">
+                    <img src="./img/document.jpg" alt="document">
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- /.container-computation -->
+          </div>
+        </div>
+
+        <iframe id="map"
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d19018.444545430233!2d30.358246679527817!3d59.93101828685544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1622723964650!5m2!1sru!2sru"
+          width="" height="" style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
+      </div>
+
+      </div>
+    </section>
   </main>
 
   <footer>
