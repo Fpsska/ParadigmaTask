@@ -53,7 +53,8 @@ $primary: #ffffff;
 
 
 .container {
-    max-width: 1565px;
+    // max-width: 1565vmax;
+    width: 98vmax;
     padding: 0 vwmax(20);
     margin: 0 auto;
     height: 100%;
