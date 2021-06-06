@@ -1,7 +1,23 @@
-@function vw($value, $base: 1920) {
+@function vwmax($value, $base: 1920) {
 	@return $value / $base * 100vw;
 }
 
-@function vmin($value, $base: 320) {
+@function vtLD($value, $base: 1366) {
+	@return $value / $base * 100vmin;
+}
+
+@function vtPT($value, $base: 1024) {
+	@return $value / $base * 100vmin;
+}
+
+@function vmLD($value, $base: 768) {
+	@return $value / $base * 100vmin;
+}
+
+@function vmPT($value, $base: 640) {
+	@return $value / $base * 100vmin;
+}
+
+@function vmmin($value, $base: 520) {
 	@return $value / $base * 100vmin;
 }

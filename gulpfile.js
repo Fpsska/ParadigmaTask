@@ -7,12 +7,12 @@ const uglify = require("gulp-uglify-es").default; //
 const autoprefixer = require("gulp-autoprefixer");
 const imagemin = require("gulp-imagemin"); // отпимизация img
 const del = require("del"); // удаление dist-папки
-// const ghpages = require('gh-pages'); // gh-pages for dist folder
+const ghpages = require('gh-pages'); // gh-pages for dist folder
 
-// ghpages.publish('dist', {
-//     repo: '', //npm run deploy
-//     message: 'Auto-generated commit'
-// });
+ghpages.publish('dist', {
+    repo: 'https://github.com/Fpsska/ParadigmaTask.git', //npm run deploy
+    message: 'Auto-generated commit'
+});
 
 
 function cleanDist() {
@@ -40,6 +40,8 @@ function scripts() {
     return src([
         "node_modules/jquery/dist/jquery.js",
         "node_modules/magnific-popup/dist/jquery.magnific-popup.js",
+        "node_modules/slick-carousel/slick/slick.js",
+        "node_modules/leaflet/dist/leaflet.js",
         "app/js/main.js"
     ])
         .pipe(concat("main.min.js")) // конкатенация + единое название 
@@ -51,6 +53,8 @@ function scripts() {
 function styles() {       /*КОМПИЛЯЦИЯ scss -> style.min.css*/
     return src([
         "node_modules/magnific-popup/dist/magnific-popup.css",
+        "node_modules/slick-carousel/slick/slick.css",
+        "node_modules/leaflet/dist/leaflet.css",
         "app/scss/style.scss"
     ]) 
         .pipe(scss({ outputStyle: "compressed" })) // минификация

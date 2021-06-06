@@ -41,44 +41,69 @@ button {
 }
 
 body {
-    font-size: vw(16);
+    font-size: 16px;
     background-color: rgba(49, 49, 49, 0.226);
+    overflow: hidden;
 }
 
 // /.NULLSTYLES
 
-$primary: #282728;
-$secondary: #ffffff;
+$text: #282728;
+$primary: #ffffff;
+
 
 .container {
-    max-width: vw(1550);
+    max-width: 1565px;
+    padding: 0 vwmax(20);
     margin: 0 auto;
     height: 100%;
+}
+.container-main {
+    max-width: 55%;
+    margin: 0 auto 0 0;
+    height: 100%;
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.container-computation {
+    display: flex;
+    align-items: flex-end;
+}
+
+.section {
+    height: 100vh;
+    min-height: 900px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../img/background.jpg);
 }
 
 .btn {
     cursor: pointer;
     color: #fff;
-    font-size: vw(16);
+    font-size: vwmax(16);
 }
 
 .btn--nav {
-    padding: vw(25) vw(35);
+    padding: vwmax(25) vwmax(35);
     border-radius: 0.3vmax;
     background-color: #313d4b;
-    font-size: vw(16);
+    font-size: vwmax(16);
     @extend %u-regular;
+    transition: 0.25s linear;
+    &:hover {
+        box-shadow: vwmax(0) vwmax(10) vwmax(2) vwmax(-5) rgba(92, 110, 138, 1) inset;
+    }
 }
 
 .btn--calc {
     text-transform: uppercase;
-    padding: vw(25) 0 vw(25) vw(15);
     background-color: #fe6f51;
-    border-radius: px(5);
     text-align: start;
-    width: 16vmax;
-    position: relative;
-    overflow: hidden;
     @extend %u-bold;
 }
 
@@ -88,7 +113,7 @@ $secondary: #ffffff;
 
 .btn--switch {
     background-color: transparent;
-    color: $primary;
+    color: $text;
     padding: 0;
     transition: 0.3s linear;
     &:hover {
@@ -97,25 +122,44 @@ $secondary: #ffffff;
 }
 
 svg {
-    width: vw(50);
-    height: vw(25);
+    width: vwmax(50);
+    height: vwmax(25);
 }
 
 .menu-icon {
     display: none;
-    width: vw(150);
-    height: vw(35);
+    width: vwmax(150);
+    height: vwmax(35);
     z-index: 10;
 }
 .menu-icon div {
-    width: vw(30);
-    height: vw(5);
+    width: vwmax(30);
+    height: vwmax(5);
     background: #282728;
-    margin: vw(5);
+    margin: vwmax(5);
     transition: all 0.35s;
-    border-radius: vw(2);
+    border-radius: vwmax(2);
 }
 
 .nav_mobile {
     display: none;
 }
+
+// #map {
+//     position: absolute;
+//     top: 50%;
+//     left: 50%;
+//     transform: translate(-50%, -50%);
+//     transition: .5s linear;
+//     display: none;
+//     // z-index: -1;
+//     // opacity: 0;
+// }
+
+// #map.visible {
+//     display: block;
+//     width: 90%;
+//     // opacity: 1;
+//     z-index: 2;
+//     height: vwmax(850);
+// }

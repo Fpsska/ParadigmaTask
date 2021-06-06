@@ -1,27 +1,46 @@
-$(document).ready(function() {
+$(document).ready(function () {
 	$('.slider').magnificPopup({
 		delegate: 'a',
 		type: 'image',
-		closeOnContentClick: false,
-		closeBtnInside: false,
-		mainClass: 'mfp-with-zoom mfp-img-mobile',
-		image: {
-			verticalFit: true,
-			titleSrc: function(item) {
-				return item.el.attr('title') + ' &middot; <a class="image-source-link" href="'+item.el.attr('data-source')+'" target="_blank">image source</a>';
-			}
-		},
 		gallery: {
 			enabled: true
 		},
 		zoom: {
 			enabled: true,
 			duration: 300, // don't foget to change the duration also in CSS
-			opener: function(element) {
+			opener: function (element) {
 				return element.find('img');
 			}
 		}
-		
 	});
 });
+
+// /. slider gallary
+
+// let map = document.querySelector("#map");
+// let mapBtn = document.querySelector("#mapBtn");
+
+// mapBtn.addEventListener("click", (event) => {
+// 	event.preventDefault();
+// 	map.classList.add("visible");
+// })
+// map.addEventListener("mouseout", () => {
+// 	map.classList.remove("visible");
+// })
+// window.addEventListener("keydown", event => {
+// 	if (event.code === "Escape") {
+// 		map.classList.remove("visible")
+// 	}
+// })
+
+// /. map
+
+$('.nav__menu-mobile').slick({
+	infinite: true,
+	slidesToShow: 5,
+	slidesToScroll: 1,
+	dots: false,
+	arrows: false,
+});
+
 

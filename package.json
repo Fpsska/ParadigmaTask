@@ -4,7 +4,7 @@
   "description": "description",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "gh-pages -d dist"
   },
   "author": "Fpsska",
   "license": "ISC",
@@ -20,6 +20,9 @@
     "jquery": "^3.5.1"
   },
   "dependencies": {
-    "magnific-popup": "^1.1.0"
+    "gh-pages": "^3.2.0",
+    "leaflet": "^1.7.1",
+    "magnific-popup": "^1.1.0",
+    "slick-carousel": "^1.8.1"
   }
 }
