@@ -41,6 +41,15 @@ $('.nav__menu-mobile').slick({
 	slidesToScroll: 1,
 	dots: false,
 	arrows: false,
+	responsive: [
+		{
+			breakpoint: 520,
+			settings: {
+				slidesToShow: 3,
+				slidesToScroll: 1,
+			}
+		},
+	]
 });
 
 

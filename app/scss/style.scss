@@ -8,12 +8,12 @@
     left: 0;
     top: 0;
     z-index: 100;
-    width: 100%;
+    width: 100vw;
 }
 
 .logo {
-    width: 30%;
-
+    // width: 30%;
+    width: 25vw;
     display: flex;
     align-items: flex-end;
     &__img {
@@ -176,7 +176,8 @@
 
 .worker {
     position: absolute;
-    width: 7%;
+    // width: 7%;
+    width: 7vw;
     top: vwmax(320);
     left: vwmax(1650);
     display: flex;
@@ -229,13 +230,16 @@
         position: relative;
     }
     &__item_1 {
-        width: 36%;
+        // width: 36%;
+        width: 18vw;
     }
     &__item_2 {
-        width: 24%;
+        // width: 24%;
+        width: 11vw;
     }
     &__item_3 {
-        width: 22%;
+        // width: 22%;
+        width: 10vw;
     }
     &__decoration {
         position: absolute;
@@ -245,9 +249,6 @@
 }
 
 .computation {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
     margin-top: vwmax(50);
     &__wrapper {
         display: flex;
@@ -257,7 +258,8 @@
     &__text {
         @extend %u-regular;
         font-size: vwmax(18);
-        width: 71%;
+        // width: 71%;
+        width: 20vw;
         margin-bottom: vwmax(15);
     }
     &__button {
@@ -267,7 +269,8 @@
         justify-content: center;
         align-items: center;
         border-radius: vwmax(5);
-        width: 70%;
+        // width: 70%;
+        width: 20vw;
         position: relative;
         overflow: hidden;
         transition: 0.25s linear;

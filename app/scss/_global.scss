@@ -53,16 +53,17 @@ $primary: #ffffff;
 
 
 .container {
-    // max-width: 1565vmax;
-    width: 98vmax;
-    padding: 0 vwmax(20);
+    max-width: vwmax(1700);
+    padding: 0 vwmax(10);
     margin: 0 auto;
-    height: 100%;
+    // min-height: 100vh;
 }
 .container-main {
-    max-width: 55%;
+    // max-width: 55%;
+    max-width: vwmax(850);
     margin: 0 auto 0 0;
-    height: 100%;
+
+    min-height: 100vh;
 
     position: relative;
     display: flex;
@@ -72,11 +73,16 @@ $primary: #ffffff;
 .container-computation {
     display: flex;
     align-items: flex-end;
+    justify-content: space-between;
+}
+
+.main {
+    min-height: 100vh;
 }
 
 .section {
-    height: 100vh;
-    min-height: 900px;
+    min-height: 100vh;
+
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -93,7 +99,7 @@ $primary: #ffffff;
     padding: vwmax(25) vwmax(35);
     border-radius: 0.3vmax;
     background-color: #313d4b;
-    font-size: vwmax(16);
+    // font-size: vwmax(16);
     @extend %u-regular;
     transition: 0.25s linear;
     &:hover {
