@@ -12,7 +12,6 @@
 }
 
 .logo {
-    // width: 30%;
     width: 25vw;
     display: flex;
     align-items: flex-end;
@@ -73,12 +72,12 @@
             width: vwmax(20);
             height: 100%;
             background-color: rgba(#fff, 0.5);
-            transform: skewX(-42deg) translateX(vwmax(-50));
+            transform: skewX(-42deg) translateX(vwmax(-100));
             animation: light-move 4s ease-in-out 0s infinite;
         }
         @keyframes light-move {
             0% {
-                transform: skewX(-42deg) translateX(vwmax(-50));
+                transform: skewX(-42deg) translateX(vwmax(-100));
             }
             20% {
                 transform: skewX(-42deg) translateX(vwmax(910));
@@ -176,7 +175,6 @@
 
 .worker {
     position: absolute;
-    // width: 7%;
     width: 7vw;
     top: vwmax(320);
     left: vwmax(1650);
@@ -230,15 +228,12 @@
         position: relative;
     }
     &__item_1 {
-        // width: 36%;
         width: 18vw;
     }
     &__item_2 {
-        // width: 24%;
         width: 11vw;
     }
     &__item_3 {
-        // width: 22%;
         width: 10vw;
     }
     &__decoration {
@@ -258,7 +253,6 @@
     &__text {
         @extend %u-regular;
         font-size: vwmax(18);
-        // width: 71%;
         width: 20vw;
         margin-bottom: vwmax(15);
     }
@@ -269,7 +263,6 @@
         justify-content: center;
         align-items: center;
         border-radius: vwmax(5);
-        // width: 70%;
         width: 20vw;
         position: relative;
         overflow: hidden;
@@ -284,12 +277,12 @@
             width: vwmax(20);
             height: 100%;
             background-color: rgba(#fff, 0.5);
-            transform: skewX(-42deg) translateX(vwmax(-250));
+            transform: skewX(-42deg) translateX(vwmax(-380));
             animation: calc-move 4s ease-in-out infinite;
         }
         @keyframes calc-move {
             0% {
-                transform: skewX(-42deg) translateX(vwmax(-250));
+                transform: skewX(-42deg) translateX(vwmax(-380));
             }
             20% {
                 transform: skewX(-42deg) translateX(vwmax(1000));

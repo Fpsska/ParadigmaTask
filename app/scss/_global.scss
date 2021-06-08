@@ -56,10 +56,8 @@ $primary: #ffffff;
     max-width: vwmax(1700);
     padding: 0 vwmax(10);
     margin: 0 auto;
-    // min-height: 100vh;
 }
 .container-main {
-    // max-width: 55%;
     max-width: vwmax(850);
     margin: 0 auto 0 0;
 
@@ -99,7 +97,6 @@ $primary: #ffffff;
     padding: vwmax(25) vwmax(35);
     border-radius: 0.3vmax;
     background-color: #313d4b;
-    // font-size: vwmax(16);
     @extend %u-regular;
     transition: 0.25s linear;
     &:hover {
@@ -152,21 +149,3 @@ svg {
     display: none;
 }
 
-// #map {
-//     position: absolute;
-//     top: 50%;
-//     left: 50%;
-//     transform: translate(-50%, -50%);
-//     transition: .5s linear;
-//     display: none;
-//     // z-index: -1;
-//     // opacity: 0;
-// }
-
-// #map.visible {
-//     display: block;
-//     width: 90%;
-//     // opacity: 1;
-//     z-index: 2;
-//     height: vwmax(850);
-// }
